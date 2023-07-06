@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="scripts/main.js" async></script>
+    <title>Shopping Cart</title>
+    
+</head>
+<body>   
+        <!-- Navbar content -->
+        <nav class="navbar navbar-light navbar-expand-lg navbar-light bg-light" style="background-color: #e3f2fd;">
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <a class="navbar-brand text-primary fw-bolder" href="#">MarketPlace</a>
+              <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active link-secondary" aria-current="page" href="#">Phones</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-danger" href="#">Pc</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-danger" href="#">Accessories</a>
+                  </li>
+                </ul>
+                <form class="d-flex">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+            
+          <!--Items section-->
+            <div class="container mt-xxl-5" style="display: flex; justify-content: center; align-items: center; height: 100%;">
+              <div class="row">
+                <!--Item one-->
+                <div class="col">
+                  <div class="card" style="width: 18rem;">
+
+                     <!--Start Carousel-->
+                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                      <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                      </div>
+
+                      <div class="carousel-inner">
+                        <!--Image one Item one-->
+                        <div class="carousel-item active w-100 h-100">
+                          <img src="images/iphone-14-pro-max-black-front.webp" class="d-block w-100 h-100" alt="...">
+                        </div>
+                        <!--Image two Item one-->
+                        <div class="carousel-item w-100 h-100">
+                          <img src="images/iphone-14-pro-max-black-side.webp" class="d-block w-100 h-100" alt="...">
+                        </div>
+                        <!--Image three item one-->
+                        <div class="carousel-item w-100 h-100">
+                          <img src="images/iphone-14-pro-max-gold-front.webp" class="d-block w-100 h-100" alt="...">
+                        </div>
+                      </div>
+                      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                    </div>
+                    <!--End of Carousel-->
+
+                    <div class="card-body">
+                        <p class="text-danger fw-bold mx-4">iPhone 14 Pro Max</p>
+                      <p class="card-text fw-bold mx-4">$900</p>
+                      <button class="btn-primary mx-4" type="button">Add to cart</button>
+                    </div>
+                  </div>
+                </div>
+                <!--Item two-->
+                <div class="col">
+                  <div class="card" style="width: 18rem;">
+                    <!--Image carousel for item two-->
+                    <!--Start Carousel-->
+                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                      <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                      </div>
+                      
+                      <div class="carousel-inner">
+                        <!--Image one Item two-->
+                        <div class="carousel-item active">
+                          <img src="images/iphone-14-pro-max-black-front.webp" class="d-block w-100" alt="...">
+                        </div>
+                        <!--Image two Item two-->
+                        <div class="carousel-item">
+                          <img src="images/iphone-14-pro-max-black-side.webp" class="d-block w-100" alt="...">
+                        </div>
+                        <!--Image three item two-->
+                        <div class="carousel-item">
+                          <img src="images/iphone-14-pro-max-gold-front.webp" class="d-block w-100" alt="...">
+                        </div>
+                      </div>
+                      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                    </div>
+                    <!--End of Carousel-->
+
+                    <div class="card-body">
+                        <p class="text-danger fw-bold mx-4">iPhone 13 Pro </p>
+                      <p class="card-text fw-bold mx-4">$800</p>
+                      <button class="btn-primary mx-4" type="button">Add to cart</button>
+                    </div>
+                  </div>
+                </div>
+                <!--Item three-->
+                <div class="col">
+                  <div class="card" style="width: 18rem;">
+                    <!--Image carousel for item three-->
+                    <!--Start Carousel-->
+                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                      <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                      </div>
+                      
+                      <div class="carousel-inner">
+                        <!--Image one Item three-->
+                        <div class="carousel-item active">
+                          <img src="images/iphone-14-pro-max-black-front.webp" class="d-block w-100" alt="...">
+                        </div>
+                        <!--Image two Item three-->
+                        <div class="carousel-item">
+                          <img src="images/iphone-14-pro-max-black-side.webp" class="d-block w-100" alt="...">
+                        </div>
+                        <!--Image three item three-->
+                        <div class="carousel-item">
+                          <img src="images/iphone-14-pro-max-gold-front.webp" class="d-block w-100" alt="...">
+                        </div>
+                      </div>
+                      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                    </div>
+                    <!--End of Carousel-->
+                    
+                    <div class="card-body">
+                      <p class="text-danger fw-bold mx-4">iPhone 12</p>
+                      <p class="card-text fw-bold mx-4">$600</p>
+                      <button class="btn-primary mx-4" type="button">Add to cart</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>      
+
+            <!--Cart section-->
+
+            <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">ITEM</th>
+                    <th scope="col" type="Sum"></th>
+                    <th scope="col" type="Number">PRICE</th>
+                    <th scope="col" type="Number">QUANTITY</th>
+                    <th scope="col" type="Sum">TOTAL</th>
+                    
+
+                   
+                  </tr>
+                </thead>
+                <tbody>
+                   <tr>
+                     <td scope="row"><input class="" type="checkbox"></td>
+                    
+                    <td>
+                        <div>
+                        <img class="" src="images/iphone-14-pro-max-black-front.webp" alt="" style="height: 50px; width: 50px;">
+                    </div>
+                    </td>
+                    <td class="">
+                        <h3 class="item-name">iPhone 14 Pro Max</h3>
+                    </td>
+                   
+                    <td class="item-price">
+                        <h3>$900</h3>
+                    </td>
+                    
+                    <td>
+                        <input class="num" type="number" value="1" style="width: 50px;">
+                    </td>
+                    <td class="total-price">
+                        <h3>$900</h3>
+                    </td>
+                    <td>
+                        <button class="remove btn btn-danger" type="button">REMOVE</button>
+                    </td> 
+                  </tr>
+
+                  <tr>
+                    
+                  
+                 </tr>
+                 <br>
+                  
+                </tbody>
+                <tbody>
+                    <tr>
+                        <td>
+                            <input class="" type="checkbox">
+                        </td>
+                        <td>
+                            <img class=""  width="40" alt="">
+                        </td>
+                        <td class="">
+                            <h3 class ="item-name"><strong>Grand-Total</strong>
+                            </h3>
+                        </td>
+                        <td class="">
+                            <h3></h3>
+                        </td>
+                        <td class="">
+                            <h3></h3>
+                        </td>
+                        <td class="grand-total">
+                            <h3><strong>$0</strong></h3>
+                        </td>
+          
+                    </tr>
+    
+                </tbody>
+              </table> 
+
+
+            
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> 
+</body>
+</html>
